@@ -50,28 +50,79 @@ img{
 .main-nav a {
   text-decoration: none;
   color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn-order {
+  background-color: #ffe184;
+  padding: 15px 25px;
 }
 
 
 /* promo */
 
 .promo {
-  background-image: src="index-ekskavator.jpg";
-  background-size: 100%;
+  background-image: src="img/index-ekskavator.jpeg";
+  text-align: center;
+  background-color: #cccccc;
+  padding-top: 140px;
+  padding-bottom: 120px;
+
 }
+
 .promo-slogan {
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 44px;
   color: #ffffff;
-  text-align: center;
+
+
 }
 .promo-title {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #000000;
-  text-align: center;
+  color: #ffffff;
+  margin: 10px 120px;
+
+}
+.promo-btn {
+  border: 2px solid #ffcd34;
+  padding: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* consult */
+.consult {
+   background-color: #202e3b;
+   padding: 40px;
+}
+
+.consult-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffcd34;
+  margin-bottom: 30px;
+}
+
+.consult-btn {
+  background-color: #ffcd34;
+  padding: 15px 20px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #202e3b;
+  text-decoration: none;
+  margin-left: 0;
 }
 
 /* subheader */
@@ -93,12 +144,7 @@ img{
   	width: 35%;
 }
 
-.consult-title {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 26px;
-  color: #ffcd34;
-}
+
 
 p {
   font-family: "PT Sans", sans-serif;
@@ -201,6 +247,25 @@ p {
   width: 33.33%;
 }
 
+/* about */
+.about {
+  background-color: #202e3b;
+  display: block;
+  vertical-align: top;
+  overflow: hidden;
+
+}
+.about-number {
+  float: left;
+  width: 33%;
+
+}
+
+.about-reviews {
+  float: right;
+  width: 66%;
+}
+
 /* page-footer */
 .page-footer{
 	background-color: #202e3b;
@@ -234,8 +299,13 @@ footer .logo-brand {
 .footer-nav a {
   text-decoration: none;
   color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
 }
 
-.footer-nav .btn-order {
+.btn-order-footer {
   color: #ffcd34;
 }
