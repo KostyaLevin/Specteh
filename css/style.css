@@ -9,51 +9,77 @@ img{
 
 .container{
 	overflow: hidden;
-  	width: 400px;
+  	width: 800px;
   	margin: 0 auto;
   	padding: 0 10px;
-    
+
 }
 
 
-page-header
+/* page-header */
 .page-header{
 	background-color: #ffcd34;
-  	padding: 15px 0;
+  padding: 15px 0;
 }
 
-.logo-brand-header {
-  font-family: font-family: 'PT Sans', sans-serif; 
+.logo-brand {
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #000000;  
+  color: #000000;
+
+
 }
 
 .logo{
 	float: left;
-    width: 30%;
+  width: 30%;
 }
 
 .main-nav{
 	float: right;
-    width: 70%;
-    text-align: right;
-  
-  
+  width: 70%;
+  text-align: right;
 }
 
 .main-nav li{
 	display: inline-block;
-    
+
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000000;
 }
 
 
-subheader
+/* promo */
+
+.promo {
+  background-image: src="index-ekskavator.jpg";
+  background-size: 100%;
+}
+.promo-slogan {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  color: #ffffff;
+  text-align: center;
+}
+.promo-title {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+}
+
+/* subheader */
 .subheader{
 	background-color: black;
  	padding: 15px 0;
-    overflow: hidden;
-    
+  overflow: hidden;
+
 }
 
 .subheader-left{
@@ -68,14 +94,14 @@ subheader
 }
 
 .consult-title {
-  font-family: font-family: 'PT Sans', sans-serif; 
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 26px;
   color: #ffcd34;
 }
 
 p {
-  font-family: font-family: 'PT Sans', sans-serif; 
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
@@ -88,28 +114,28 @@ p {
 }
 
 
-catalog
+/* catalog */
 .catalog{
 	padding: 15px 0;
   	background-color: #f3f3f3;
     overflow: hidden;
-   
-  
+
+
 }
 
 .catalog-title {
-  font-family: font-family: 'PT Sans', sans-serif; 
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 26px;
-  color: #202e3b;	
-  
+  color: #202e3b;
+
 }
 
 .technic-menu{
 	float: left;
   	width: 25.33%;
   	margin-right: 8%;
-    
+
 }
 
 .catalog-content{
@@ -119,7 +145,7 @@ catalog
 
 .catalog-content-wrap{
 	overflow: hidden;
-    
+
 }
 
 .catalog-item{
@@ -175,19 +201,19 @@ catalog
   width: 33.33%;
 }
 
-page-footer
+/* page-footer */
 .page-footer{
 	background-color: #202e3b;
   	padding: 15px 0;
     overflow: hidden;
 }
 
-.logo-brand-footer {
-  font-family: font-family: 'PT Sans', sans-serif; 
+footer .logo-brand {
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #ffcd34;
-    
+  color: #ffffff
+
 }
 
 .logo{
@@ -195,12 +221,21 @@ page-footer
     width: 30%;
 }
 
-.main-nav{
+.footer-nav{
 	float: right;
     width: 70%;
     text-align: right;
 }
 
-.main-nav li{
+.footer-nav li{
 	display: inline-block;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-nav .btn-order {
+  color: #ffcd34;
 }
