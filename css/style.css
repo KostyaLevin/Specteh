@@ -15,8 +15,9 @@ img{
   width: 960px;
   margin: 0 auto;
   padding: 10px 0;
-
 }
+
+
 p {
   font-weight: 400;
   font-size: 14px;
@@ -101,6 +102,15 @@ h3 {
   padding: 15px 25px;
 }
 
+.gradient-line {
+  height: 15px;
+  background: linear-gradient(45deg, #ffcd34, #000000);
+  -webkit-background-size: 100% 20px;
+  background-size: 100% 20px;
+  background-repeat: repeat-x;
+
+
+}
 
 /* promo */
 
@@ -678,10 +688,16 @@ cite {
 
 .read-more-btn {
   background-color: #ffcd34;
-   text-decoration: none;
-  color: #000000;
-  padding: 10px 15px;
-
+  text-decoration: none;
+  padding: 10px;
+  color: #1d333f;
+  font-weight: 700;
+  background-image: url(../img/arrow-right-black.png);
+  background-position: 90% 50% ;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 35px;
 }
 
 /* contacts */
