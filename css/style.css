@@ -57,6 +57,7 @@ h3 {
   padding: 15px 0;
   position: relative;
 
+
 }
 
 .logo-brand {
@@ -92,6 +93,7 @@ h3 {
   font-size: 16px;
   text-align: center;
   padding: 15px;
+  border: 2px solid transparent;
 
 }
 
@@ -204,6 +206,7 @@ background-size: 25px 14px;
   height: 45px;
   color: #ffffff;
   border: 1px solid #ffcd34;
+  margin-left: 20px;
 
 }
 
@@ -218,11 +221,21 @@ background-size: 25px 14px;
   color: #202e3b;
   text-decoration: none;
   width: 220px;
-  height: 45px;
+  height: 47px;
   float: right;
   text-align: center;
   margin-right: 0;
+  margin-left: 20px;
 }
+
+.consult-btn:hover {
+  background-color: #ffd966;
+}
+
+.consult-btn:active {
+  background-color: #f6bf16;
+}
+
 
 /* subheader */
 .subheader{
@@ -257,6 +270,7 @@ background-size: 25px 14px;
   background-color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
+  vertical-align: middle;
 }
 .features-item p{
   color: #000;
@@ -472,7 +486,14 @@ cite {
   padding-left: 50px;
   padding-right: 20px;
   margin-top: 20px;
+}
 
+.pdf-btn:hover {
+  background-color: #46617a;
+}
+
+.pdf-btn:active {
+  background-color: #567999;
 }
 
 
@@ -566,12 +587,28 @@ cite {
 
 .catalog-btn-rent{
 	background-color: #f3c331;
+}
 
+.catalog-btn-rent:hover{
+  background-color: #ffd966;
+}
+
+.catalog-btn-rent:active{
+  background-color: #ffc600;
 }
 
 .catalog-btn-more{
 	background-color: #354b60;
 }
+
+.catalog-btn-more:hover{
+  background-color: #46617a;
+}
+
+.catalog-btn-more:active{
+  background-color: #567999;
+}
+
 
 .catalog-pagination{
 	text-align: center;
@@ -580,6 +617,20 @@ cite {
 .catalog-pagination a {
   text-decoration: none;
   color: #353535;
+  border: 2px solid transparent;
+  padding: 5px 8px;
+}
+
+.catalog-pagination a:hover {
+  border: 2px solid rgba(52, 75,96, 0.5);
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.catalog-pagination a:active {
+  border: 2px solid #354b60;
+  padding: 5px 8px;
+  border-radius: 3px;
 }
 
 .catalog-pagination li {
@@ -728,6 +779,14 @@ cite {
   padding-right: 35px;
 }
 
+.read-more-btn:hover {
+  background-color: #ffd966;
+}
+
+.read-more-btn:active {
+  background-color: #f6bf16;
+}
+
 /* contacts */
 .map-feedback {
     background-color: #f3f3f3;
@@ -772,14 +831,24 @@ cite {
 
 .feedback-btn {
   background-color: #354b60;
-  padding: 10px auto;
+  margin-top: 15px;
+  font-size: 17px;
+  padding: 10px;
+  color: #ffffff;
 }
 
 .feedback-btn a {
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
+}
 
+.feedback-btn:hover {
+  background-color: #46617a;
+}
+
+.feedback-btn:active {
+  background-color: #567999;
 }
 
 
@@ -858,8 +927,24 @@ footer .logo-brand {
   font-size: 16px;
   text-align: center;
   padding: 20px;
+  border: 2px solid transparent;
+
 }
 
-.btn-order-footer {
+.footer-nav a:hover {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.footer-nav a:active{
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-order-footer:hover {
   color: #ffcd34;
 }
+
+.btn-order-footer:active {
+  color: #ffcd34;
+}
+
