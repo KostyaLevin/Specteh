@@ -204,14 +204,23 @@ background-size: 25px 14px;
   background-color: #202e3b;
   width: 220px;
   height: 45px;
-  color: #ffffff;
   border: 1px solid #ffcd34;
   margin-left: 20px;
-
+  font-size: 14px;
+  color: #fff;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .consult input:first-child {
   margin-left: 0;
+}
+
+.consult input:last-child {
+  background-image: url(../img/arrow-down.png);
+  background-position: 90% 50% ;
+  background-repeat: no-repeat;
+  text-align: left;
 }
 
 .consult-btn {
@@ -221,7 +230,7 @@ background-size: 25px 14px;
   color: #202e3b;
   text-decoration: none;
   width: 220px;
-  height: 47px;
+  height: 45px;
   float: right;
   text-align: center;
   margin-right: 0;
@@ -303,12 +312,12 @@ background-size: 25px 14px;
   background-position: -50px -50px;
 }
 
-.features-item: first-child {
+.features-item:first-child {
   margin-left: 0;
 
 }
 
-.features-item: last-child {
+.features-item:last-child {
   margin-right: 0;
 }
 .features-item p{
@@ -343,6 +352,17 @@ background-size: 25px 14px;
   font-size: 16px;
 
 }
+
+.active-technic-menu-link {
+  text-decoration: none;
+  font-weight: 700;
+  background-image: url(../img/arrow-right-mini.png);
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  padding-left: 20px;
+
+}
+
 
 .special-offers {
   float: right;
@@ -682,12 +702,12 @@ cite {
   padding: 5px;
 }
 
-.catalog-item-sale: first-child {
+.catalog-item-sale:first-child {
   float: left;
   margin-left: 0;
 }
 
-.catalog-item-sale: last-child {
+.catalog-item-sale:last-child {
   float: right;
   margin-right: 0;
 }
@@ -790,25 +810,31 @@ cite {
 /* contacts */
 .map-feedback {
     background-color: #f3f3f3;
+    padding-top: 40px;
   }
 
 .map-contacts {
-   width: 66%;
+   width: 620px;
    float: left;
    border: 1px solid #d5d5d5;
+
 }
 .feedback-contacts {
-  width: 33%;
+  width: 300px;
   float: right;
   display: inline-block;
 
+
 }
 
-.feedback-contacts a {
+.contacts-link {
+
   font-weight: 700;
   font-size: 18px;
   text-decoration: none;
   color: #000000;
+  padding-left: 40px;
+
 }
 
 .contacts-phone {
@@ -816,17 +842,32 @@ cite {
   background-repeat: no-repeat;
 }
 
+.contacts-mail {
+  background-image: url(../img/mail.png);
+  background-repeat: no-repeat;
+}
+
 .feedback form {
   display: inline;
   margin: 5px auto;
+}
+.feedback-text {
+  font-size: 16px;
 }
 
 .feedback input {
   background-color: #ffffff;
   border: 1px solid #d5d5d5;
-  width: 220px;
+  width: 300px;
   height: 45px;
   color: #ffffff;
+  padding-left: 15px;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+
+
 }
 
 .feedback-btn {
@@ -835,6 +876,7 @@ cite {
   font-size: 17px;
   padding: 10px;
   color: #ffffff;
+
 }
 
 .feedback-btn a {
@@ -881,15 +923,7 @@ cite {
  color: #000000;
 }
 
-.contacts-reviews: first-child {
-  float: left;
-  margin-left: 0;
-}
 
-.contacts-reviews: last-child {
-  float: right;
-  margin-right: 0;
-}
 
 /* page-footer */
 .page-footer{
@@ -907,7 +941,7 @@ footer .logo-brand {
 
 .logo{
 	float: left;
-    width: 30%;
+  width: 30%;
 }
 
 .footer-nav{
