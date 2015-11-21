@@ -24,13 +24,15 @@ p {
   color: #000000
 
 }
+
+
+
 h2 {
   font-weight: 700;
   font-size: 26px;
   margin-bottom: 35px;
-
-
 }
+
 h3 {
   font-weight: 700;
   font-size: 20px;
@@ -45,7 +47,7 @@ h3 {
 }
 
 .main-header p {
-    color: #ffffff;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -73,6 +75,7 @@ h3 {
 	float: left;
   width: 30%;
   text-decoration: none;
+
 }
 
 .main-nav{
@@ -94,6 +97,7 @@ h3 {
   text-align: center;
   padding: 15px;
   border: 2px solid transparent;
+  display: inline-block;
 
 }
 
@@ -108,20 +112,22 @@ h3 {
 
 
 
-.btn-order {
+.main-nav .btn-order {
   background-color: #ffe184;
-  padding: 15px 25px;
+  padding: 17px 25px;
+  border: none;
+
 }
 
-.btn-order:hover {
-  border: none;
+.main-nav .btn-order:hover {
   background-color: #ffecb2;
+  border: none;
 
 }
 
-.btn-order:active {
-  border: none;
+.main-nav .btn-order:active {
   background-color: #f6bf16;
+  border: none;
 
 }
 
@@ -159,9 +165,9 @@ background-size: 25px 14px;
 }
 .promo-title {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   color: #ffffff;
-  margin: 10px 120px;
+  margin: 30px 120px;
 
 }
 .promo-btn {
@@ -206,6 +212,7 @@ background-size: 25px 14px;
   height: 45px;
   border: 1px solid #ffcd34;
   margin-left: 20px;
+  margin-top: 20px;
   font-size: 14px;
   color: #fff;
   padding-left: 20px;
@@ -229,12 +236,19 @@ background-size: 25px 14px;
   font-size: 16px;
   color: #202e3b;
   text-decoration: none;
-  width: 220px;
-  height: 45px;
+  width: 240px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   float: right;
   text-align: center;
   margin-right: 0;
   margin-left: 20px;
+}
+
+.consult .consult-btn {
+  width: 220px;
+  margin-left: 27px;
+  margin-top: 20px;
 }
 
 .consult-btn:hover {
@@ -289,27 +303,27 @@ background-size: 25px 14px;
 .features-item {
   display: inline-block;
   width: 24.5%;
-  background-image: url(../img/features.png);
-  background-size: 100px 100px;
+  background-size: 60px 50px;
   background-repeat: no-repeat;
+
 
 
 }
 
 .features-item-tool {
-  background-position: -25px  -25px;
+  background-image: url(../img/tool.png);
 }
 
 .features-item-work {
-  background-position: 0px -50px;
+  background-image: url(../img/work.png);
 }
 
 .features-item-fencing {
-  background-position: -50px 0px;
+  background-image: url(../img/fencing.png);
 }
 
 .features-item-workman {
-  background-position: -50px -50px;
+  background-image: url(../img/workman.png);
 }
 
 .features-item:first-child {
@@ -321,14 +335,12 @@ background-size: 25px 14px;
   margin-right: 0;
 }
 .features-item p{
-  padding-left: 60px;
+  padding-left: 70px;
 }
 
 .features-item-tool {
   background-position: 0 0;
 }
-
-
 
 
 /* deals */
@@ -342,7 +354,8 @@ background-size: 25px 14px;
 
 .technic-menu {
   float: left;
-  width: 24.75%;
+  width: 26%;
+  margin-bottom: 50px;
 
 }
 
@@ -366,28 +379,40 @@ background-size: 25px 14px;
 
 .special-offers {
   float: right;
-  width: 74.25%;
+  width: 74%;
 }
 
 .deals-table {
  width: 100%;
+ border-collapse:collapse
+
 
 }
 .table-title {
   font-weight: 700;
   font-size: 16px;
   background-color: #dfdfdf;
+  text-align: left;
+}
+.table-title th {
+  padding: 10px 15px;
 }
 
-.deals-table tr: {
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+
+
+.deals-table tr:nth-child(2) {
   background-color: #ffffff;
 }
 
-.deals-table tr: (2n-1) {
+.deals-table tr:nth-child(4) {
   background-color: #ffffff;
 }
+
+.deals-table td {
+  padding: 10px 15px;
+}
+
 
 /* about */
 .about {
@@ -463,19 +488,27 @@ cite {
 
 
 }
-.consult-title {
-
-}
 
 .catalog-header-left {
   width: 74.25%;
   float: left;
   display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .catalog-header-right {
   width: 24.75%;
   float: right;
+  margin-top: 40px;
+}
+
+.catalog-header-right .consult-btn {
+  margin-bottom: 16px;
+}
+
+.consult-title {
+  margin-bottom: 10px;
 }
 
 .catalog-title {
@@ -485,13 +518,8 @@ cite {
   background-size: 30px;
 }
 
-.technic-menu {
-	float: left;
-  width: 25.33%;
-  margin-right: 8%;
 
-}
-.pdf-btn {
+.technic-menu .pdf-btn {
   background-color: #354b60;
   padding: 5px;
   font-weight: 400;
@@ -519,7 +547,7 @@ cite {
 
 .catalog-content{
 	float: right;
-  	width: 66.66%;
+  	width: 66%;
 }
 
 .catalog-content-wrap{
@@ -528,12 +556,18 @@ cite {
 }
 
 .catalog-item{
-	width: 48%;
+
 	margin-bottom: 4%;
-  	float: left;
-  	background-color: white;
-  	padding: 30px;
-  	box-sizing: border-box;
+  float: left;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+
+}
+
+.catalog-item-normal {
+  width: 48.5%;
+
 }
 
 .catalog-item-new {
@@ -556,9 +590,9 @@ cite {
   padding: 5px;
 }
 
-.catalog-item:nth-child(2n+1){
-	margin-right: 4%;
-  	clear: both;
+.catalog-item-normal:nth-child(2n+1){
+	margin-right: 2.5%;
+
 }
 
 .catalog-actions{
@@ -660,7 +694,7 @@ cite {
 
 }
 
-.active-pages-nav {
+.catalog-pagination .active-pagination {
 	background-color: #354b60;
   padding: 5px 8px;
   border-radius: 3px;
@@ -678,12 +712,15 @@ cite {
 
 .sale-title {
   color: #ffffff;
+  padding-top: 40px;
 }
 
 .catalog-item-sale {
 	overflow: hidden;
-  width: 33%;
+  width: 32%;
   position: relative;
+  margin-right: 2%;
+  margin-bottom: 40px;
 
 }
 
@@ -719,10 +756,12 @@ cite {
   background-position: 50% 50%;
 
 }
-.consult-title {
-  float: left;
-  width: 30%;
+
+.portfolio-header .consult-title{
+  display: inline-block;
+  margin-top: 30px;
 }
+
 .portfolio-nav {
   float: right;
   width: 70%;
@@ -773,7 +812,7 @@ cite {
 
 .text-project {
   background-color: #ffffff;
-  padding: 30px;
+  padding: 30px 30px 40px 30px;
   width: 320px;
   margin-top: 150px;
 
@@ -814,17 +853,29 @@ cite {
   }
 
 .map-contacts {
-   width: 620px;
+   width: 64%;
    float: left;
    border: 1px solid #d5d5d5;
 
 }
+
+.contacts-header .consult-title{
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.contacts-header span {
+  margin-left: 15px;
+}
+
+.contacts-header .consult-btn {
+  margin-top: 30px;
+}
+
 .feedback-contacts {
-  width: 300px;
+  width: 33%;
   float: right;
   display: inline-block;
-
-
 }
 
 .contacts-link {
@@ -847,9 +898,14 @@ cite {
   background-repeat: no-repeat;
 }
 
+.feedback {
+  margin-top: 35px;
+}
+
 .feedback form {
   display: inline;
-  margin: 5px auto;
+
+
 }
 .feedback-text {
   font-size: 16px;
@@ -858,12 +914,12 @@ cite {
 .feedback input {
   background-color: #ffffff;
   border: 1px solid #d5d5d5;
-  width: 300px;
+  width: 100%;
   height: 45px;
-  color: #ffffff;
+  color: #000000;
   padding-left: 15px;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 5px;
   box-sizing: border-box;
 
@@ -872,10 +928,13 @@ cite {
 
 .feedback-btn {
   background-color: #354b60;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 17px;
-  padding: 10px;
+  padding: 15px 69px;
   color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+
 
 }
 
@@ -895,7 +954,7 @@ cite {
 
 
 .reviews {
-
+  margin-top: 20px;
 }
 .contacts-reviews {
     display: inline-block;
@@ -904,7 +963,8 @@ cite {
   }
 
 .contacts-reviews img {
-   margin-left: 60px;
+   margin-left: 45px;
+   margin-bottom: 20px;
 }
 
 .contacts-reviews blockquote {
@@ -913,14 +973,15 @@ cite {
   margin-left: 0;
   text-align: center;
   width: 220px;
-  margin: 10px;
+  margin-bottom: 50px;
 
 }
 
 .contacts-reviews cite {
- width: 700px;
+ font-weight: 700;
  font-size: 14px;
  color: #000000;
+
 }
 
 
@@ -944,6 +1005,7 @@ footer .logo-brand {
   width: 30%;
 }
 
+
 .footer-nav{
 	float: right;
     width: 70%;
@@ -962,6 +1024,7 @@ footer .logo-brand {
   text-align: center;
   padding: 20px;
   border: 2px solid transparent;
+  display: inline-block;
 
 }
 
@@ -974,11 +1037,16 @@ footer .logo-brand {
   border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-.btn-order-footer:hover {
+.footer-nav .btn-order-footer{
+  border: none;
   color: #ffcd34;
 }
 
-.btn-order-footer:active {
-  color: #ffcd34;
+.footer-nav .btn-order-footer:hover {
+  border: none;
+}
+
+.footer-nav .btn-order-footer:active {
+  border: none;
 }
 
