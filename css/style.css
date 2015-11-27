@@ -4,11 +4,10 @@
 }
 body {
   font-family: "PT Sans", sans-serif;
+
 }
 
-img{
-	max-width: 100%;
-}
+
 
 .container{
 	overflow: hidden;
@@ -160,6 +159,7 @@ background-size: 25px 14px;
   font-weight: 700;
   font-size: 44px;
   color: #ffffff;
+  text-transform: uppercase;
 
 
 }
@@ -303,7 +303,7 @@ background-size: 25px 14px;
 .features-item {
   display: inline-block;
   width: 24.5%;
-  background-size: 60px 50px;
+  background-size: 60px 60px;
   background-repeat: no-repeat;
 
 
@@ -461,6 +461,8 @@ background-size: 25px 14px;
    border-radius: 5px;
    clear: both;
    margin-bottom: 40px;
+   height: 118px;
+   width: 118px;
 
 }
 
@@ -471,6 +473,7 @@ blockquote {
   color: #ffffff;
   font-size: 18px;
   margin-left: 20px;
+  margin-bottom: 40px;
 }
 
 cite {
@@ -487,6 +490,12 @@ cite {
     overflow: hidden;
 
 
+}
+
+.catalog-header {
+  background-image: url(../img/732_best.jpg);
+  background-size: 100% auto;
+  background-position: 50% 70%;
 }
 
 .catalog-header-left {
@@ -567,13 +576,12 @@ cite {
 
 .catalog-item-normal {
   width: 48.5%;
-
-}
-
-.catalog-item-new {
   overflow: hidden;
   position: relative;
+
 }
+
+
 
  .new-mark {
   position: absolute;
@@ -618,9 +626,11 @@ cite {
 .catalog-item img{
    margin-top: 30px;
    margin-bottom: 30px;
+   width: 250px;
+   height: 150px;
 }
 
-.catalog-price {
+.catalog-item span {
    font-size: 22px;
 
 }
@@ -750,16 +760,16 @@ cite {
 }
 
 /* portfolio */
-.main-header {
+.portfolio-header {
   background-image: url(../img/portfolio-header.jpg);
   background-size: 100% auto;
   background-position: 50% 50%;
-
 }
 
 .portfolio-header .consult-title{
   display: inline-block;
   margin-top: 30px;
+
 }
 
 .portfolio-nav {
@@ -777,7 +787,6 @@ cite {
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
-  text-align: center;
   padding: 20px;
 }
 
@@ -787,7 +796,7 @@ cite {
 }
 .progect {
    margin-top: 10px;
-   height: 500px;
+   min-height: 500px;
    vertical-align: middle;
    background-position: 50% 50%;
    background-size: 100% auto;
@@ -857,6 +866,12 @@ cite {
    float: left;
    border: 1px solid #d5d5d5;
 
+}
+
+.contacts-header {
+  background-image: url(../img/732_best.jpg);
+  background-size: 100% auto;
+  background-position: 50% 70%;
 }
 
 .contacts-header .consult-title{
@@ -965,6 +980,8 @@ cite {
 .contacts-reviews img {
    margin-left: 45px;
    margin-bottom: 20px;
+   width: 120px;
+   height: 120px;
 }
 
 .contacts-reviews blockquote {
